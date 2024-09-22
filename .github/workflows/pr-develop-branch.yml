@@ -88,10 +88,7 @@ jobs:
               # Finally, we add the list of tests to the $GITHUB_ENV variable
               # as this allows us to reference the list in a subsequent step.  If you
               # were using a normal env variable, its value would not be available outside this step.
-              run: |
-                  echo $PR_BODY > ./pr_body.txt
-                  node ./parsePR.js              
-                  TESTS=$(cat testsToRun.txt)       
+              run: |     
                   echo "APEX_TESTS=ALL" >> $GITHUB_ENV
                   
             # Now Install Salesforce CLI
