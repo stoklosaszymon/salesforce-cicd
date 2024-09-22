@@ -6,4 +6,8 @@ public with sharing class Test {
     public Integer sum(Integer a, Integer b) {
         return a + b;
     }
+
+    public Integer multi(Integer a, Integer b) {
+        return a * b;
+    }
 }
