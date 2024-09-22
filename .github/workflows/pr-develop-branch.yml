@@ -47,6 +47,11 @@ jobs:
             # changed between commits, so that we can only deploy that metadata
             # to the destination org
 
+            - name: 'Ignore engines from yarn'
+              run: |
+                echo "Ignore engines"
+                yarn config set ignore-engines true 
+
             - name: 'Checkout source code'
               uses: actions/checkout@v4
               with:
