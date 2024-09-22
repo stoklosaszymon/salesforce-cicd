@@ -3,4 +3,8 @@ public with sharing class Test {
 
     }
     
+
+    public string asd() {
+        return 'asd';
+    }
 }
