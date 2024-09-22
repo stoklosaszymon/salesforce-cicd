@@ -10,4 +10,8 @@ public with sharing class Test {
     public Integer multi(Integer a, Integer b) {
         return a * b;
     }
+
+    public Integer sub(Integer a, Integer b) {
+        return a - b;
+    }
 }
