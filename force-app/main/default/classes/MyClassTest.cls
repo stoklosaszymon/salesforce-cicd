@@ -23,7 +23,7 @@ private class MyClassTest {
     static void testDiv() {
         Integer result = 0;
         Test.startTest();
-        result = MyClass.sum(4, 2);
+        result = MyClass.div(4, 2);
         Test.stopTest();
         Assert.areEqual(2, result);
     }
@@ -32,7 +32,7 @@ private class MyClassTest {
     static void testMult() {
         Integer result = 0;
         Test.startTest();
-        result = MyClass.sum(3, 3);
+        result = MyClass.mult(3, 3);
         Test.stopTest();
         Assert.areEqual(9, result);
     }
