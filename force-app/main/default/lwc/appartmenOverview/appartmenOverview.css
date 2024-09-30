@@ -1,0 +1,41 @@
+.background {
+    width: 100%;
+    height: 100%;
+    /*background-image: url(https://modernhouse-projekty.pl/wp-content/uploads/2023/05/Gotowy_projekt_domu_nowoczesna_stodola_NewHouse_791_1-scaled-1920x960.jpg);*/
+    filter: blur(3px);
+    background-size: cover;
+}
+
+.content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+   /*background-image: url(https://modernhouse-projekty.pl/wp-content/uploads/2023/05/Gotowy_projekt_domu_nowoczesna_stodola_NewHouse_791_1-scaled-1920x960.jpg);*/
+    background-size: cover;
+    padding: 5%;
+    background-clip: content-box;
+    /* border-radius: 0px; */
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+.menu {
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    width: fit-content;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu .icon {
+    --slds-c-icon-color-foreground-default: white;
+}
