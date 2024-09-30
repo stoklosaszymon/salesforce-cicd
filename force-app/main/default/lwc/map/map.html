@@ -1,0 +1,14 @@
+<template>
+    <lightning-map map-markers={mapMarkers} zoom-level={zoomLevel} onmarkerselect={onMarkerSelect}> </lightning-map>
+    <template if:true={isSelected}>
+        <div class="detailsContainer">
+            <lightning-icon class="closeIcon" icon-name="utility:close" size="x-small" alternative-text="close"
+                onclick={onClose}>
+            </lightning-icon>
+
+            <div class="containerBottom">
+                <lightning-button class="center-button stretch" label="Show Property"></lightning-button>
+            </div>
+        </div>
+    </template>
+</template>
